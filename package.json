@@ -1,0 +1,40 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "Photo Transfer Tool",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx electron .",
+    "classify": "node phototransfer.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "tzuuncle",
+  "license": "ISC",
+  "dependencies": {
+    "exif-parser": "^0.1.12"
+  },
+  "devDependencies": {
+    "electron": "^28.2.3",
+    "electron-builder": "^24.6.0"
+  },
+  "build": {
+    "appId": "com.tzuuncle.phototransfer",
+    "productName": "照片分類工具",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "mac": {
+      "target": ["dmg", "zip"]
+    },
+    "win": {
+      "target": ["nsis", "zip"]
+    },
+    "linux": {
+      "target": ["AppImage", "deb"]
+    }
+  }
+}
