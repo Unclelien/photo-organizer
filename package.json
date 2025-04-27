@@ -4,6 +4,7 @@
   "description": "Photo Transfer Tool",
   "main": "main.js",
   "scripts": {
+    "set-version": "npm version patch --no-git-tag-version && node updateVersion.js",
     "start": "npx electron .",
     "classify": "node phototransfer.js",
     "pack": "electron-builder --dir",
