@@ -24,22 +24,23 @@
     "electron-builder": "^24.6.0"
   },
   "build": {
-    "appId": "com.tzuuncle.phototransfer",
+    "appId": "com.tzuuncle.photoorganizer",
     "productName": "照片分類工具",
-    "files": [
-      "**/*"
-    ],
+    "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
     "directories": {
-      "buildResources": "assets"
+      "buildResources": "build"
     },
     "mac": {
+      "icon": "build/icon.icns",
       "target": ["dmg", "zip"]
     },
     "win": {
+      "icon": "build/icon.ico",
       "target": ["nsis", "zip"]
     },
     "linux": {
+      "icon": "build/icon.png",
       "target": ["AppImage", "deb"]
     }
-  }
+  }  
 }
