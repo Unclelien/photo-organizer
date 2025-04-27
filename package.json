@@ -31,13 +31,7 @@
       {
         "provider": "github",
         "owner": "Unclelien",
-        "repo": "photo-organizer",
-        "releaseType": "release",
-        "files": [
-          "*.dmg",
-          "*.exe",
-          "*.AppImage"
-        ]
+        "repo": "photo-organizer"
       }
     ],
     "directories": {
@@ -55,5 +49,6 @@
       "icon": "build/icon.png",
       "target": ["AppImage", "deb"]
     }
-  }  
+  }
+   
 }
