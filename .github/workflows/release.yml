@@ -19,11 +19,12 @@ jobs:
         node-version: 18
     - run: npm install
     - run: npm run dist
-    - uses: softprops/action-gh-release@v1
+    - name: Upload release assets
+      uses: softprops/action-gh-release@v1
       with:
         files: |
-          dist/**/*.exe
           dist/**/*.dmg
-          dist/**/*.AppImage
+          dist/**/*.zip
+          dist/**/*.exe
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
