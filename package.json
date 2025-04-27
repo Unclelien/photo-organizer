@@ -27,6 +27,19 @@
     "appId": "com.tzuuncle.photoorganizer",
     "productName": "photo-organizer",
     "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "Unclelien",
+        "repo": "photo-organizer",
+        "releaseType": "release",
+        "files": [
+          "*.dmg",
+          "*.exe",
+          "*.AppImage"
+        ]
+      }
+    ],
     "directories": {
       "buildResources": "build"
     },
