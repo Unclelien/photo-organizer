@@ -11,6 +11,8 @@
     "dist": "electron-builder"
   },
   "author": "UncleLien",
+  "email": "tonlien89@yahoo.com.tw",
+  "url": "https://github.com/Unclelien",
   "license": "ISC",
   "dependencies": {
     "exif-parser": "^0.1.12"
