@@ -10,7 +10,7 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
   },
-  "author": "tzuuncle",
+  "author": "UncleLien",
   "license": "ISC",
   "dependencies": {
     "exif-parser": "^0.1.12"
